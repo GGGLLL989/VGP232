@@ -205,7 +205,7 @@ namespace FinalProject_MapEditor
             }
         }
         /// <summary>
-        /// Generate a level map with prim algorithm
+        /// Generate a level map with random maze
         /// </summary>
         /// <param name="size">the size of the level map</param>
         /// <returns></returns>
@@ -213,6 +213,17 @@ namespace FinalProject_MapEditor
         {
             LevelMap levelMap = new LevelMap(size);
 
+            Random rd = new Random();
+            for (int i = 0; i < size; i++)
+            {
+                for (int j = 0; j < size; j++)
+                {
+                    if (rd.Next(10) < 2)
+                    {
+                        levelMap.PlaceThingAt(i, j, Tile.Wall);
+                    }
+                }
+            }
             return levelMap;
         }
     }

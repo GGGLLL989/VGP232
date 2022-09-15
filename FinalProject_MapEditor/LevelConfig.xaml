@@ -9,9 +9,9 @@
         Background="#EEEEEE"
         Title="Size Selection" Height="300" Width="400">
     <Grid>
-        <RadioButton x:Name="radioButton" Content="20 x 20" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Checked="ChooseSize" IsChecked="True"/>
-        <RadioButton x:Name="radioButton1" Content="25 x 25" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" Checked="ChooseSize"/>
-        <RadioButton x:Name="radioButton2" Content="30 x 30" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Checked="ChooseSize"/>
+        <RadioButton x:Name="radioButton" Content="15 x 15" HorizontalAlignment="Center" Margin="0,52,0,0" VerticalAlignment="Top" Checked="ChooseSize" IsChecked="True"/>
+        <RadioButton x:Name="radioButton1" Content="20 x 20" HorizontalAlignment="Center" Margin="0,98,0,0" VerticalAlignment="Top" Checked="ChooseSize"/>
+        <RadioButton x:Name="radioButton2" Content="25 x 25" HorizontalAlignment="Center" Margin="0,147,0,0" VerticalAlignment="Top" Checked="ChooseSize"/>
         <Button x:Name="button" Content="Continue" HorizontalAlignment="Center" Margin="0,209,0,0" VerticalAlignment="Top" Width="82" Click="button_Click"/>
 
     </Grid>

@@ -21,17 +21,17 @@ namespace FinalProject_MapEditor
         private void ChooseSize(object sender, RoutedEventArgs e)
         {
             string content = ((RadioButton)sender).Content.ToString();
-            if (content.Contains("20"))
+            if (content.Contains("15"))
+            {
+                selectionSize = 15;
+            }
+            else if (content.Contains("20"))
             {
                 selectionSize = 20;
             }
             else if (content.Contains("25"))
             {
                 selectionSize = 25;
-            }
-            else if (content.Contains("30"))
-            {
-                selectionSize = 30;
             }
         }
 

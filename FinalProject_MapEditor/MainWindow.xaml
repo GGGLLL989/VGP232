@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FinalProject_MapEditor"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Background="#EEEEEE"
+        ResizeMode="NoResize"
+        WindowStartupLocation="CenterScreen"
+        Title="LevelMapEditor" Height="750" Width="600" MouseLeftButtonDown="Window_MouseLeftButtonDown" >
+    <Grid Margin="1,0,-1,0">
 
+        <Canvas x:Name="mapCanvas" HorizontalAlignment="Center" Height="580" Margin="0,60,0,0" VerticalAlignment="Top" Width="580"/>
+        <Button x:Name="button" Content="Random Maze" HorizontalAlignment="Left" Margin="20,662,0,0" VerticalAlignment="Top" Width="91" Click="RandomMaze"/>
+        <Button x:Name="button1" Content="Player" HorizontalAlignment="Left" Margin="162,662,0,0" VerticalAlignment="Top" Width="69" Click="ChoosePlayer"/>
+        <Button x:Name="button2" Content="Enemy" HorizontalAlignment="Center" Margin="0,662,0,0" VerticalAlignment="Top" Width="64" Click="ChooseEnemy"/>
+        <Button x:Name="button3" Content="Wall" HorizontalAlignment="Left" Margin="380,662,0,0" VerticalAlignment="Top" Width="68" Click="ChooseWall"/>
+        <Button x:Name="button4" Content="Erase" HorizontalAlignment="Left" Margin="485,662,0,0" VerticalAlignment="Top" Width="65" Click="ChooseErase"/>
+        <Button x:Name="button5" Content="NewLevel" HorizontalAlignment="Left" Margin="20,22,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.163,0.091" Width="70" Click="NewLevel"/>
+        <Button x:Name="button6" Content="OpenLevel" HorizontalAlignment="Left" Margin="124,22,0,0" VerticalAlignment="Top" Width="78" Click="OpenLevel"/>
+        <Button x:Name="button7" Content="SaveLevel" HorizontalAlignment="Left" Margin="241,22,0,0" VerticalAlignment="Top" Width="80" Click="SavelLevel"/>
+        <Button x:Name="button8" Content="ExitProgram" HorizontalAlignment="Left" Margin="358,22,0,0" VerticalAlignment="Top" Width="90" Click="ExitProgram"/>
     </Grid>
 </Window>
